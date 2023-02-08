@@ -49,7 +49,7 @@ i.bi.bi-apple {
     padding-top: 75px;
 }
 .inner-text a{
-    color: white;
+    color: #e8e8ea;
     text-decoration: none;
 }
 .inner-text h1{
@@ -64,8 +64,22 @@ i.bi.bi-apple {
     color: #0099ff;
     /* padding-left: 18px; */
 }
-.inner-text div a span {
+.inner-link a:hover,
+.inner-link a:focus,
+.inner-link a:active
+{
+    text-decoration: underline;
+}
+.inner-link a span i:hover,
+.inner-link a span i:focus,
+.inner-link a span i:active
+{
+    text-decoration: none;
+}
+.inner-text div span, .bi-play-circle-fill, .bi-arrow-up-right {
     padding-left: 0.4%;
+    font-size: 20px;
+    color: #0099ff;
 }
 .inner-link {
     padding-top: 15px;
@@ -81,7 +95,7 @@ i.bi.bi-apple {
     background-position: center;
 }
 
-.bg_2 .inner-text h1, .bg_2 .inner-text h3{
+.bg_2 .inner-text h1, .bg_2 .inner-text h3, .bg_6 h2, .bg_6 h5, .bg_7 h2, .bg_7 h5,.bg_8 h2, .bg_8 h5 {
     color: black;
 }
 
@@ -98,5 +112,130 @@ i.bi.bi-apple {
 }
 
 .homepod .container-fluid{
-    padding: 15px 0px;
+    padding: 15px 0px 0px;
+}
+
+.bg_3{
+    background: url("../img/apple_watch.jpg");
+    background-size: cover;
+    height: 625px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bg_4{
+    background: url("../img/promo_bhm_watch.jpg");
+    background-size: cover;
+    height: 625px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.small_items i.bi.bi-apple{
+    font-size: 23px;
+    vertical-align: bottom;
+}
+
+.small_items .inner-text h3 {
+    font-weight: 600;
+    line-height: 18px;
+    font-size: 23px;
+    font-family: sans-serif;
+    /* font-stretch: ultra-condensed; */
+    letter-spacing: 0.5px;
+}
+.small_items .col{
+    padding: 12px 0px 12px 12px;
+}
+.small_items .inner-link a {
+        font-size: 17px;
+}
+.box_1 p {
+    line-height: 10px;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    color: #c01f25;
+    font-weight: 700;
+    text-shadow: -1px 4px 7px #c17272;
+}
+.box_1 h5{
+    font-weight: 400;
+    line-height: 15px;
+}
+.box_1 .inner-link{ 
+    padding-top: 6px;
+}
+.box_2 h5,
+.bg_5 h5,
+.bg_7 h5,
+.bg_8 h5 {
+    font-weight: 400;
+    line-height: 25px;
+}
+.line_2 .col{
+    padding: 0px 0px 12px 12px;
+}
+.bg_5{
+    background: url("../img/promo_timothe.jpg");
+    background-size: cover;
+    height: 625px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bg_6{
+    background: url("../img/promo_valentines_day.jpg");
+    background-size: cover;
+    height: 625px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bg_5 .inner-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    /* position: relative; */
+    /* bottom: 40%; */
+    justify-content: end;
+    padding-bottom: 45px;
+}
+.bg_6 .inner-text,
+.bg_7 .inner-text,
+.bg_8 .inner-text{
+    padding-top: 54px;
+}
+.bg_6 .inner-text h5{
+    letter-spacing: -0.6px;
+}
+.bg_6 .inner-link{
+    padding-top: 10px;
+}
+.bg_6 .inner-link a {
+    font-weight: normal;
+    color: #3876e7;
+}
+
+.bi-play-circle-fill, .bi-arrow-up-right {
+    font-size: 16px;
+}
+.bg_7{
+    background: url("../img/promo-apple-fitness.jpg");
+    background-size: cover;
+    height: 625px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bg_8{
+    background: url("../img/card.jpg");
+    background-size: cover;
+    height: 625px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bg_7 i.bi.bi-apple,.bg_8 i.bi.bi-apple {
+    font-size: 35px;
+    vertical-align: bottom;
+}
+.bg_7 h5,
+.bg_8 h5
+{
+    color: #282121fa;
 }
