@@ -4,7 +4,7 @@
 }
 
 .container{
-    width: 80%;
+    width: 55%;
 }
 
 a.nav-link:hover,
@@ -13,8 +13,90 @@ a.nav-link:focus
 {
     color: #f8f9fa !important;
 }
-
+nav.navbar.navbar-expand-lg.bg-body-tertiary.bg-dark {
+    padding: 0;
+    background: black!important;
+    opacity: 1;
+}
 li.nav-item {
-    /* padding-left: 2%; */
-    /* padding-right: 2%; */
+    font-size: 12px;
+}
+i.bi.bi-apple {
+    font-size: 16px;
+}
+
+.banner {
+    background: url(../img/banner.jpg);
+    background-size: cover;
+    height: 625px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navbar-nav-scroll {
+    width: 100%;
+    display: flex;
+    /* align-content: center; */
+    align-items: center;
+    justify-content: space-around;
+}
+
+.banner .inner-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 75px;
+}
+.inner-text a{
+    color: white;
+    text-decoration: none;
+}
+.inner-text h1{
+    font-size: 50px;
+}
+.inner-text h3{
+    font-weight: 400;
+    line-height: 18px;
+}
+.inner-link a{
+    font-size: 20px;
+    color: #0099ff;
+    /* padding-left: 18px; */
+}
+.inner-text div a span {
+    padding-left: 0.4%;
+}
+.inner-link {
+    padding-top: 15px;
+}
+.iphone_14 {
+    background-color: #fbfbfd;
+}
+.bg_2{
+    background: url("../img/hero_iphone14.jpg");
+    background-size: cover;
+    height: 625px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg_2 .inner-text h1, .bg_2 .inner-text h3{
+    color: black;
+}
+
+.bg_2 h3{
+    letter-spacing: -1.9px;
+}
+
+.homepod .banner{
+    background: url("../img/homepod.jpg");
+    background-size: cover;
+    height: 625px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.homepod .container-fluid{
+    padding: 15px 0px;
 }
