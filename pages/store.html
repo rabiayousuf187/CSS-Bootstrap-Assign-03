@@ -6,8 +6,15 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
+    
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+    <!-- Link Swiper's CSS -->
+    <!-- <link rel="stylesheet" href="../Swiper demo_files/swiper-bundle.min.css"> -->
+
+    <!-- Resize Slider -->
+      <link rel="stylesheet" href="../assests/resize-slider-demo_files/swiper-bundle.min.css">
 
     <link rel="stylesheet" href="../css/style.css">
   </head>
@@ -115,197 +122,42 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid">
-        <swiper-container class="mySwiper" pagination="false" pagination-clickable="false" slides-per-view="4"
-          centered-slides="true" space-between="30" grab-cursor="true">
-          <style>
-            
-          </style>
-          <swiper-slide><img src="../img/store/slider/store-card-.png"alt="system" title="system"/></swiper-slide>
-          <swiper-slide><img src="../img/store/slider/store-card-13-iphone-nav-202209_GEO_US.png" alt="iPhone" title=""/></swiper-slide>
-          <swiper-slide><img src="../img/store/slider/store-card-13-ipad-nav-202210.png"alt="iPad" title="iPad"/></swiper-slide>
-          <swiper-slide><img src="../img/store/slider/store-card-13-watch-nav-202209.png"alt="watch" title="watch"/></swiper-slide>
-          <swiper-slide><img src="../img/store/slider/store-card-13-airpods-nav-202209.png"alt="AirPods" title="AirPods"/></swiper-slide>
-          <swiper-slide><img src="../img/store/slider/store-card-13-airtags-nav-202108.png"alt="AirTag" title="AirTag"/></swiper-slide>
-          <swiper-slide><img src="../img/store/slider/store-card-13-appletv-nav-202210.png"alt="appleTV" title="appleTV"/></swiper-slide>
-          <swiper-slide><img src="../img/store/slider/store-card-13-homepod-nav-202301.png"alt="homepod" title="homepod"/></swiper-slide>
-          <swiper-slide><img src="../img/store/slider/store-card-13-accessories-nav-202209.png"alt="Accessories" title="Accessories"/></swiper-slide>
-          <swiper-slide class=""><img src="../img/store/slider/store-card-13-holiday-giftcards-asit-agc-nav-202111.png"alt="gift" title="gift"/></swiper-slide>
-          
-          <!-- <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-c498e576710068405" aria-disabled="false"></div>
-          <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-c498e576710068405" aria-disabled="false"></div> -->
-        </swiper-container>
-      </div>
-    </section>
-
-    <section class="homepod">
-      <div class="container-fluid">
-        <div class="banner">
-          <div class="inner-text">
-            <a href="#">
-              <h1>iPhone 14</h1>
-              <h3>Big and bigger</h3>
-              <div class="inner-link">
-                <a href="#">Learn more</a><span>&gt;</span>
-                <a href="#" style="padding-left: 4%;">Buy</a><span>&gt;</span>
-              </div>
-            </a>
+      <div class="container-fluid" style="position: relative;
+      height: 100%;">
+        <div id="resize1" class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden resize">
+          <div class="swiper-wrapper" id="swiper-wrapper-854c02f85836fe9e" aria-live="polite">
+              <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 10" style="margin-right: 50px;"></div> 
+                <div class="swiper-slide swiper-slide-active" role="group" aria-label="2 / 10" style="margin-right: 50px;"></div> 
+                <div class="swiper-slide swiper-slide-active" role="group" aria-label="3 / 10" style="margin-right: 50px;"><img
+                src="../img/store/slider/store-card-.png" alt="system" title="system" /></div>
+            <div class="swiper-slide swiper-slide-next" role="group" aria-label="4 / 10" style="margin-right: 50px;"><img
+                src="../img/store/slider/store-card-13-iphone-nav-202209_GEO_US.png" alt="iPhone" title="" /></div>
+            <div class="swiper-slide" role="group" aria-label="5 / 10" style="margin-right: 50px;"><img
+                src="../img/store/slider/store-card-13-ipad-nav-202210.png" alt="iPad" title="iPad" /></div>
+            <div class="swiper-slide" role="group" aria-label="6 / 10" style="margin-right: 50px;"><img
+                src="../img/store/slider/store-card-13-watch-nav-202209.png" alt="watch" title="watch" /></div>
+            <div class="swiper-slide" role="group" aria-label="7 / 10" style="margin-right: 50px;"><img
+                src="../img/store/slider/store-card-13-airpods-nav-202209.png" alt="AirPods" title="AirPods" /></div>
+            <div class="swiper-slide" role="group" aria-label="8 / 10" style="margin-right: 50px;"><img
+                src="../img/store/slider/store-card-13-airtags-nav-202108.png" alt="AirTag" title="AirTag" /></div>
+            <div class="swiper-slide" role="group" aria-label="9 / 10" style="margin-right: 50px;"><img
+                src="../img/store/slider/store-card-13-appletv-nav-202210.png" alt="appleTV" title="appleTV" /></div>
+            <div class="swiper-slide" role="group" aria-label="10 / 10" style="margin-right: 50px;"><img
+                src="../img/store/slider/store-card-13-homepod-nav-202301.png" alt="homepod" title="homepod" /></div>
+            <div class="swiper-slide" role="group" aria-label="11 / 10" style="margin-right: 50px;"><img
+                src="../img/store/slider/store-card-13-accessories-nav-202209.png" alt="Accessories" title="Accessories" />
+            </div>
+            <div class="swiper-slide" role="group" aria-label="12 / 10" style="margin-right: 50px;"><img
+                src="../img/store/slider/store-card-13-holiday-giftcards-asit-agc-nav-202111.png" alt="gift" title="gift" />
+            </div>
           </div>
+          <div class="swiper-button-next2" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-854c02f85836fe9e" aria-disabled="false"></div>
+          <div class="swiper-button-prev2 swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-854c02f85836fe9e" aria-disabled="true"></div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
         </div>
       </div>
     </section>
-
-    <section>
-      <section class="small_items">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col"> 
-              <div class="box_1 banner bg_3">
-                <div class="inner-text">
-                  <a href="#">
-                    <h3><span><i class="bi bi-apple"></i></span>WATCH</h3>
-                    <p>SERIES 8</p>
-                      <h5>A healthy leap ahead.</h5>
-                      <div class="inner-link">
-                        <a href="#">Learn more</a><span>&gt;</span>
-                        <a href="#" style="padding-left: 4%;">Buy</a><span>&gt;</span>
-                      </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col"> 
-              <div class="box_2 banner bg_4">
-                <div class="inner-text">
-                  <a href="#">
-                    <h2>Creativity and<br/>
-                    community<br/>
-                    Woven together.</h2>
-                      <h5>Explore the new Black Unity watch<br/>band and matching face.</h5>
-                      <div class="inner-link">
-                        <a href="#">Learn more</a><span>&gt;</span>
-                        <a href="#" style="padding-left: 4%;">Buy</a><span>&gt;</span>
-                      </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="row line_2">
-            <div class="col"> 
-              <div class="box_1 banner bg_5">
-                <div class="inner-text">
-                  <a href="#">
-                    <h3><span><i class="bi bi-apple"></i></span>WATCH</h3>
-                    <p>SERIES 8</p>
-                    <h5>Almost all the biggest stars<br/>in Hollywood. Almost.</h5>
-                      <div class="inner-link">
-                        <a href="#">Watch now</a><span><i class="bi bi-play-circle-fill"></i></span>
-                        <a href="#" style="padding-left: 4%;">Try Apple TV<span style="padding: 0;">+</span> free<sup>1</sup></a><span><i class="bi bi-arrow-up-right"></i></span>
-                      </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col"> 
-              <div class="box_2 banner bg_6">
-                <div class="inner-text">
-                  <a href="#">
-                    <h2>Valentine's Day</h2>
-                      <h5>Sealed with a gift.</h5>
-                      <div class="inner-link">
-                        <a href="#">Shop now</a><span>&gt;</span>
-                      </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="row line_2">
-            <div class="col"> 
-              <div class="box_1 banner bg_7">
-                <div class="inner-text">
-                  <a href="#">
-                     <h2><span><i class="bi bi-apple"></i></span>Fitness+</h2>
-                     <h5>Almost all the biggest stars<br/>in Hollywood. Almost.</h5>
-                      <div class="inner-link">
-                        <a href="#">Learn more</a><span>&gt;</span>
-                        <a href="#" style="padding-left: 4%;">Try it free<sup>2</sup></a><span><i class="bi bi-arrow-up-right"></i></span>
-                      </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col"> 
-              <div class="box_2 banner bg_8">
-                <div class="inner-text">
-                  <a href="#">
-                     <h2><span><i class="bi bi-apple"></i></span>Card</h2>
-                      <h5>Get up to 3% Daily Cash Back<br/>
-                      with every purchase.</h5>
-                      <div class="inner-link">
-                        <a href="#">Learn more</a><span>&gt;</span>
-                        <a href="#" style="padding-left: 4%;">Apply now</a><span>&gt;</span>
-                      </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </section>
-
-    <section>
-      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="5000">
-            <img src="./img/slider/img1.jpg" class="d-block w-100" alt="img4">
-            <div class="carousel-caption d-none d-md-block">
-              <button type="button" class="btn btn-light">Stream now<span></span><i class="bi bi-play-circle-fill"></i></button>
-              <span><b>Drama</b>No disappearance is a coincidence.</span>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="./img/slider/img2.jpg" class="d-block w-100" alt="img2">
-            <div class="carousel-caption d-none d-md-block">
-              <button type="button" class="btn btn-light">Stream now<i class="bi bi-play-circle-fill"></i></button>
-                <span><b>Drama</b>No disappearance is a coincidence.</span>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="./img/slider/img3.jpg" class="d-block w-100" alt="img3">
-            <div class="carousel-caption d-none d-md-block">
-              <button type="button" class="btn btn-light">Stream now<i class="bi bi-play-circle-fill"></i></button>
-                <span><b>Drama</b>No disappearance is a coincidence.</span>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="./img/slider/img41.jpg" class="d-block w-100" alt="img4">
-            <div class="carousel-caption d-none d-md-block">
-              <button type="button" class="btn btn-light">Stream now<span></span><i class="bi bi-play-circle-fill"></i></button>
-              <span><b>Drama</b>No disappearance is a coincidence.</span>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        </div>
-      </div>
-    </section>
+ 
 
     <section class="footer">
       <div class="container">
@@ -578,10 +430,14 @@
         </div>
       </div>
     </section>
-    <
+
+    
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+   
+    <!-- Swiper JS -->
+      <script src="../assests/resize-slider-demo_files/swiper-bundle.min.js.download"></script>
     <script src="../js/script.js"></script>
   </body>
 </html>
