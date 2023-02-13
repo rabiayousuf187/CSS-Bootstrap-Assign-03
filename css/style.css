@@ -4,7 +4,7 @@
 }
 
 .container{
-    width: 55%;
+    width: 70%;
 }
 
 a.nav-link:hover,
@@ -18,7 +18,7 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary.bg-dark {
     padding: 0;
     background: black!important;
     opacity: 1;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
 }
 li.nav-item {
@@ -510,9 +510,15 @@ div#resize1:hover .swiper-button-prev2:after {
         transform: rotate(90deg);
     } */
 }
+#resize1 .store_main{
+    width: 44px !important;
+}
 
 
 /* ************************ Slider 2 ************************** */
+section.resize2.store_item_1 {
+    padding-bottom: 60px;
+}
 .store_item_1 .header{
     padding-bottom: 20px;
 }
@@ -611,7 +617,9 @@ div#resize1:hover .swiper-button-prev2:after {
 .swiper-button-prev2.swiper-button-disabled {
     display: none;
 }
-
+#resize2 .latest_main{
+    width: 230px !important;
+}
 /* ************* slider 3 */
 #resize3 .Pro_item_text {
     display: flex;
@@ -623,14 +631,280 @@ div#resize1:hover .swiper-button-prev2:after {
     height: 100%;
     align-items: flex-start;
 }
-#resize3 .badget{
-    font-size: smaller;
-    color: red;
+#resize3 .swiper-slide {
+    width: 312px !important;
 }
-#resize3 .access_item_price{
-    font-size: small;
+#resize3 .swiper-slide.access_main_slide {
+    width: 410px !important;
+}
+#resize3 .badget {
+    font-size: smaller;
+    color: #bf4800;
+}
+p.access_text {
+    font-size: 15px;
     color: black;
+    font-weight: 500;
+}
+#resize3 .access_item_price {
+    color: black;
+    font-size: medium;
 }
 #resize3 .product_item{
     background-color: white !important;
+}
+#resize3 .swiper-slide.access_main {
+    width: 230px !important;
+}
+/* ******* help ********* */
+.help, .reason{
+    height: 100%;
+    padding-bottom: 60px;
+}
+.help .content{
+    height: 500px;
+    margin: 0%;
+    padding: 0%;
+    
+}
+.help .col-6{
+    padding: 0%;
+}
+.specialist{
+    background: url('../img/store/help/store-card-50-specialist-help-202211.jpeg');
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    height: 500px;
+    width: 90%;
+    border-radius: 20px;
+    transition: transform 0.8s;
+}
+.session{
+    background: url('../img/store/help/store-card-25-apps-202108.jpeg');
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    height: 240px;
+    width: 90%;
+    margin: 0%;
+    border-radius: 20px;
+    transition: transform 0.8s;
+    margin-bottom: 15px;
+}
+.expert{
+    background: url('../img/store/help/store-card-25-genius-202108.jpeg');
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    height: 240px;
+    width: 90%;
+    width: 90%;
+    border-radius: 20px;
+    transition: transform 0.8s;
+}
+.specialist:hover,
+.session:hover,
+.expert:hover
+{
+    box-shadow: -5px 10px 20px #00000029;
+    transform: scale3d(1.01,1.01,1.01);
+    /* border-radius: 20px; */
+    
+}
+.specialist .text,
+.session .text
+{
+    width: 100%;    
+    padding: 7%;
+}
+    
+.expert .text
+{
+    width: 70%;
+    padding: 7%;
+}
+.specialist .text a,
+.session .text a,
+.expert .text a
+{
+    text-decoration: none;
+    color: black;
+}
+.specialist .text a p,
+.session .text a p,
+.expert .text a p
+{
+    font-size: 12px;
+    font-weight: 500;
+}
+.reason .swiper-slide {
+    background-color: white;
+    width: 317px !important;
+    height: 260px !important;
+    padding: 20px 30px;
+    border-radius: 20px;
+    transition: transform 0.8s;
+    margin-left: 15px;
+}
+.reason .swiper-slide:hover
+{
+    box-shadow: -5px 10px 20px #00000029;
+    transform: scale3d(1.01,1.01,1.01);
+    /* border-radius: 20px; */
+}
+.reason i.bi {
+    font-size: 50px;
+}
+.reason_text{
+    /* white-space: normal; */
+}
+.reason a {
+    text-decoration: none;
+    color: black;
+}
+.color_green{
+   color: #80d006 !important;
+}
+
+.color_purple{
+   color: #ac39ff !important;
+}
+.color_red{
+   color: #ec3127 !important;
+}
+#resize4 .main_reason{
+    background-color: #f5f5f7 !important;
+    width: 106px !important;
+
+}
+
+section.reason .swiper-button-prev2,
+section.reason .swiper-button-next2
+ {
+    width: 55px;
+    height: 55px;
+    background: #4b42422c;
+    border-radius: 50%;
+    display: none;
+    margin: auto;
+    top: var(--swiper-navigation-top-offset,40%);
+}
+section.reason .swiper-button-next2:after,
+section.reason .swiper-button-prev2:after {
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+}
+section.reason:hover .swiper-button-prev2,
+section.reason:hover .swiper-button-next2
+ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ******************* Slider **************** */
+#resize5 .Pro_item_text {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+}
+#resize5 .main_slide{
+    display: flex;
+    height: 100%;
+    align-items: flex-start;
+}
+#resize5 .swiper-slide {
+    width: 312px !important;
+}
+#resize5 .swiper-slide.access_main_slide {
+    width: 410px !important;
+}
+#resize5 .badget {
+    font-size: smaller;
+    color: #bf4800;
+}
+p.access_text {
+    font-size: 15px;
+    color: black;
+    font-weight: 500;
+}
+#resize5 .access_item_price {
+    color: black;
+    font-size: medium;
+}
+#resize5 .product_item{
+    background-color: white !important;
+}
+#resize5 .swiper-slide.loud_main {
+    width: 230px !important;
+}
+
+/* ******************* Slider **************** */
+#resize6 .Pro_item_text {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    padding-top: 45px;
+}
+#resize6 .main_slide{
+    display: flex;
+    height: 100%;
+    align-items: flex-start;
+}
+#resize6 .swiper-slide {
+    width: 490px !important
+}
+/* #resize6 .swiper-slide.access_main_slide {
+    width: 410px !important;
+} */
+#resize6 .badget {
+    font-size: smaller;
+    color: #bf4800;
+}
+p.access_text {
+    font-size: 15px;
+    color: black;
+    font-weight: 500;
+}
+#resize6 .access_item_price {
+    color: black;
+    font-size: medium;
+}
+#resize6 .product_item{
+    background-color: white !important;
+}
+#resize6 .swiper-slide.loud_main {
+    width: 230px !important;
+}
+#resize6 .swiper-button-prev2, #resize6 .swiper-button-next2 {
+    top: var(--swiper-navigation-top-offset,40%);
+}
+
+
+/* ****** SLider ********* */
+
+#resize7 .swiper-slide.latest_main {
+    width: 232px !important;
+}
+
+#resize7 .main_slide h2 {
+    padding-top: 25px;
+    letter-spacing: -0.3px;
+}
+
+/* *********** store footer *********** */
+.footer .row {
+    padding: 0% 4%;
+}
+.footer .footer_btn a {
+    text-decoration: none;
+    width: 139px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50px;
+    color: #4c4747;
+    background-color: #e8e8ed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0% 0.7% 3% 0.1%;
 }

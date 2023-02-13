@@ -63,4 +63,90 @@ function getDirection() {
 
     return direction;
 }
+// Slider
+var swiper = new Swiper('#resize4', {
+    slidesPerView: 4,
+    direction: getDirection(),
+    navigation: {
+    nextEl: '.swiper-button-next2',
+    prevEl: '.swiper-button-prev2',
+    },
+    on: {
+    resize: function () {
+        swiper.changeDirection(getDirection());
+    },
+    },
+});
+
+function getDirection() {
+    var windowWidth = window.innerWidth;
+    var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+    return direction;
+}
+
+// Slider
+var swiper = new Swiper('#resize5', {
+    slidesPerView: 4,
+    direction: getDirection(),
+    navigation: {
+    nextEl: '.swiper-button-next2',
+    prevEl: '.swiper-button-prev2',
+    },
+    on: {
+    resize: function () {
+        swiper.changeDirection(getDirection());
+    },
+    },
+});
+
+function getDirection() {
+    var windowWidth = window.innerWidth;
+    var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+    return direction;
+}
+// Slider
+var swiper = new Swiper('#resize6', {
+    slidesPerView: 3,
+    direction: getDirection(),
+    navigation: {
+    nextEl: '.swiper-button-next2',
+    prevEl: '.swiper-button-prev2',
+    },
+    on: {
+    resize: function () {
+        swiper.changeDirection(getDirection());
+    },
+    },
+});
+
+function getDirection() {
+    var windowWidth = window.innerWidth;
+    var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+    return direction;
+}
+
+// Slider
+var swiper = new Swiper('#resize7', {
+    slidesPerView: 3,
+    direction: getDirection(),
+    navigation: {
+    nextEl: '.swiper-button-next2',
+    prevEl: '.swiper-button-prev2',
+    },
+    on: {
+    resize: function () {
+        swiper.changeDirection(getDirection());
+    },
+    },
+});
+
+function getDirection() {
+    var windowWidth = window.innerWidth;
+    var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+    return direction;
+}
 
