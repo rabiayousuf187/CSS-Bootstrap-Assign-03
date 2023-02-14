@@ -1,587 +1,1114 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apple Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="../css/style.css">
-  </head>
-  <body class="store_body">
-    <!--******  Reference Website *******-->
-        <!-- https://www.daraz.pk/ -->
-        <!-- https://www.apple.com/store -->
-        <!-- https://swiperjs.com/demos#parallax -->
-    <section class="store_nav">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark store_nav" data-bs-theme="dark" style="color: black;background: #f5f5f7 !important;">
-          <div class="container">
-        
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-              aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarScroll">
-              <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
-                <li class="nav-item nav-link">
-                  <a class="navbar-brand" aria-current="page" href="../index.html"><i class="bi bi-apple"></i></a>
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+  <!-- Resize Slider -->
+  <link rel="stylesheet" href="../assests/resize-slider-demo_files/swiper-bundle.min.css">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/e70c1b9bfc.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="store_body">
+  <!--******  Reference Website *******-->
+  <!-- https://www.daraz.pk/ -->
+  <!-- https://www.apple.com/store -->
+  <!-- https://swiperjs.com/demos#parallax -->
+  <section class="store_nav">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark store_nav" data-bs-theme="dark"
+      style="color: black;background: #f5f5f7 !important;">
+      <div class="container">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+            <li class="nav-item nav-link">
+              <a class="navbar-brand" aria-current="page" href="../index.html"><i class="bi bi-apple"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Store</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Mac</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">iPad</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">iPhone</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Watch</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">AirPods</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">TV&amp;Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Only on Apple</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Accessories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link aria-current=" page" href="./support.html">Support</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"><i class="bi bi-search"></i></a>
+            </li>
+            <li class="nav-item dropdown has-megamenu">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false"><i class="bi bi-bag"></i>
+              </a>
+              <ul class="dropdown-menu megamenu" role="menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Store</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Mac</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">iPad</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">iPhone</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Watch</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">AirPods</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">TV&amp;Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Only on Apple</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Accessories</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link aria-current=" page" href="#">Support</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#"><i class="bi bi-search"></i></a>
-                </li>
-                <li class="nav-item dropdown has-megamenu">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i
-                      class="bi bi-bag"></i>
-                  </a>
-                  <ul class="dropdown-menu megamenu" role="menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
-              <!-- <form class="d-flex" role="search">
-                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                          <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form> -->
-            </div>
-          </div>
-        </nav>
-    </section>
-
-    <section class="store">
-      <div class="container">
-        <div class="header">
-          <div class="text">
-            <h1><span style="color: black !important;">
-              Store.</span> The best way to buy the<br/>products you love.</span></h1>
-          </div>
-          <div class="text_right">
-            <div class="chat_1">
-                <div>
-                    <img src="../img/store/store-chat.jpg" title="chat" alt="chat"/>
-                </div>
-                <div class="text">
-                    <p>Need shopping help?</p>
-                    <a href="#">Ask a Specialist</a>
-                </div>
-            </div>
-            <div class="chat_1" style="padding-top: 15px;">
-                <div class="chat_icon">
-                    <i class="bi bi-chat-square"></i>
-                    <i class="bi bi-apple"></i>
-                </div>
-                <div class="text">
-                    <p>Visit an Apple Store</p>
-                    <a href="#">Find one near you</a><span style="color:blue; font-size: 12px;"><i class="bi bi-chevron-right"></i></span>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid">
-        <swiper-container class="mySwiper" pagination="false" pagination-clickable="false" slides-per-view="4"
-          centered-slides="true" space-between="30" grab-cursor="true">
-          <style>
-            
-          </style>
-          <swiper-slide><img src="../img/store/slider/store-card-.png"alt="system" title="system"/></swiper-slide>
-          <swiper-slide><img src="../img/store/slider/store-card-13-iphone-nav-202209_GEO_US.png" alt="iPhone" title=""/></swiper-slide>
-          <swiper-slide><img src="../img/store/slider/store-card-13-ipad-nav-202210.png"alt="iPad" title="iPad"/></swiper-slide>
-          <swiper-slide><img src="../img/store/slider/store-card-13-watch-nav-202209.png"alt="watch" title="watch"/></swiper-slide>
-          <swiper-slide><img src="../img/store/slider/store-card-13-airpods-nav-202209.png"alt="AirPods" title="AirPods"/></swiper-slide>
-          <swiper-slide><img src="../img/store/slider/store-card-13-airtags-nav-202108.png"alt="AirTag" title="AirTag"/></swiper-slide>
-          <swiper-slide><img src="../img/store/slider/store-card-13-appletv-nav-202210.png"alt="appleTV" title="appleTV"/></swiper-slide>
-          <swiper-slide><img src="../img/store/slider/store-card-13-homepod-nav-202301.png"alt="homepod" title="homepod"/></swiper-slide>
-          <swiper-slide><img src="../img/store/slider/store-card-13-accessories-nav-202209.png"alt="Accessories" title="Accessories"/></swiper-slide>
-          <swiper-slide class=""><img src="../img/store/slider/store-card-13-holiday-giftcards-asit-agc-nav-202111.png"alt="gift" title="gift"/></swiper-slide>
-          
-          <!-- <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-c498e576710068405" aria-disabled="false"></div>
-          <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-c498e576710068405" aria-disabled="false"></div> -->
-        </swiper-container>
-      </div>
-    </section>
-
-    <section class="homepod">
-      <div class="container-fluid">
-        <div class="banner">
-          <div class="inner-text">
-            <a href="#">
-              <h1>iPhone 14</h1>
-              <h3>Big and bigger</h3>
-              <div class="inner-link">
-                <a href="#">Learn more</a><span>&gt;</span>
-                <a href="#" style="padding-left: 4%;">Buy</a><span>&gt;</span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <section class="small_items">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col"> 
-              <div class="box_1 banner bg_3">
-                <div class="inner-text">
-                  <a href="#">
-                    <h3><span><i class="bi bi-apple"></i></span>WATCH</h3>
-                    <p>SERIES 8</p>
-                      <h5>A healthy leap ahead.</h5>
-                      <div class="inner-link">
-                        <a href="#">Learn more</a><span>&gt;</span>
-                        <a href="#" style="padding-left: 4%;">Buy</a><span>&gt;</span>
-                      </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col"> 
-              <div class="box_2 banner bg_4">
-                <div class="inner-text">
-                  <a href="#">
-                    <h2>Creativity and<br/>
-                    community<br/>
-                    Woven together.</h2>
-                      <h5>Explore the new Black Unity watch<br/>band and matching face.</h5>
-                      <div class="inner-link">
-                        <a href="#">Learn more</a><span>&gt;</span>
-                        <a href="#" style="padding-left: 4%;">Buy</a><span>&gt;</span>
-                      </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="row line_2">
-            <div class="col"> 
-              <div class="box_1 banner bg_5">
-                <div class="inner-text">
-                  <a href="#">
-                    <h3><span><i class="bi bi-apple"></i></span>WATCH</h3>
-                    <p>SERIES 8</p>
-                    <h5>Almost all the biggest stars<br/>in Hollywood. Almost.</h5>
-                      <div class="inner-link">
-                        <a href="#">Watch now</a><span><i class="bi bi-play-circle-fill"></i></span>
-                        <a href="#" style="padding-left: 4%;">Try Apple TV<span style="padding: 0;">+</span> free<sup>1</sup></a><span><i class="bi bi-arrow-up-right"></i></span>
-                      </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col"> 
-              <div class="box_2 banner bg_6">
-                <div class="inner-text">
-                  <a href="#">
-                    <h2>Valentine's Day</h2>
-                      <h5>Sealed with a gift.</h5>
-                      <div class="inner-link">
-                        <a href="#">Shop now</a><span>&gt;</span>
-                      </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="row line_2">
-            <div class="col"> 
-              <div class="box_1 banner bg_7">
-                <div class="inner-text">
-                  <a href="#">
-                     <h2><span><i class="bi bi-apple"></i></span>Fitness+</h2>
-                     <h5>Almost all the biggest stars<br/>in Hollywood. Almost.</h5>
-                      <div class="inner-link">
-                        <a href="#">Learn more</a><span>&gt;</span>
-                        <a href="#" style="padding-left: 4%;">Try it free<sup>2</sup></a><span><i class="bi bi-arrow-up-right"></i></span>
-                      </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col"> 
-              <div class="box_2 banner bg_8">
-                <div class="inner-text">
-                  <a href="#">
-                     <h2><span><i class="bi bi-apple"></i></span>Card</h2>
-                      <h5>Get up to 3% Daily Cash Back<br/>
-                      with every purchase.</h5>
-                      <div class="inner-link">
-                        <a href="#">Learn more</a><span>&gt;</span>
-                        <a href="#" style="padding-left: 4%;">Apply now</a><span>&gt;</span>
-                      </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </section>
-
-    <section>
-      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="5000">
-            <img src="./img/slider/img1.jpg" class="d-block w-100" alt="img4">
-            <div class="carousel-caption d-none d-md-block">
-              <button type="button" class="btn btn-light">Stream now<span></span><i class="bi bi-play-circle-fill"></i></button>
-              <span><b>Drama</b>No disappearance is a coincidence.</span>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="./img/slider/img2.jpg" class="d-block w-100" alt="img2">
-            <div class="carousel-caption d-none d-md-block">
-              <button type="button" class="btn btn-light">Stream now<i class="bi bi-play-circle-fill"></i></button>
-                <span><b>Drama</b>No disappearance is a coincidence.</span>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="./img/slider/img3.jpg" class="d-block w-100" alt="img3">
-            <div class="carousel-caption d-none d-md-block">
-              <button type="button" class="btn btn-light">Stream now<i class="bi bi-play-circle-fill"></i></button>
-                <span><b>Drama</b>No disappearance is a coincidence.</span>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="./img/slider/img41.jpg" class="d-block w-100" alt="img4">
-            <div class="carousel-caption d-none d-md-block">
-              <button type="button" class="btn btn-light">Stream now<span></span><i class="bi bi-play-circle-fill"></i></button>
-              <span><b>Drama</b>No disappearance is a coincidence.</span>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        </div>
-      </div>
-    </section>
-
-    <section class="footer">
-      <div class="container">
-        <div>
-          <ol class="list_1">
-            <li>New subscribers only. $6.99/month after free trial. Plan automatically renews until cancelled. <a>Terms</a> apply.</li>
-            <li>Apple Fitness+ requires iPhone 8 or later, or Apple Watch Series 3 or later paired with iPhone 6s or later. New subscribers only. $9.99/month after trial. Plan automatically renews until cancelled. <a>Terms</a> apply.</li>
-          </ol>
-          <ul class="list_2">
-            <li>A subscription is required for Apple Fitness+.</li>
-            <li>Apple Fitness+ requires an iPhone 8 or later with iOS 16.1.</li>
-            <li>Apple Fitness+ requires an Apple Watch Series 3 or later. Available when paired with iPhone 6s or later with iOS 14.3 or later.</li>
-            <li>Fitness app on Apple TV requires tvOS 14.3 or later.</li>
-            <li>Fitness app on iPad requires iPadOS 14.3 or later.</li>
-            <li>To get the newest features, make sure your devices are running the latest software version.</li>
-            <li>o access and use all the features of Apple Card, you must add Apple Card to Wallet on an iPhone or iPad with the latest version of iOS or iPadOS. Update to the latest version by going to Settings<span>&gt;</span> General <span>&gt;</span> Software Update. Tap Download and Install.</li>
-            <li>Available for qualifying applicants in the United States.</li>
-            <li>Apple Card is issued by Goldman Sachs Bank USA, Salt Lake City Branch.</li>
-            <li>Learn more about how Apple Card applications are evaluated at <a>support.apple.com/kb/HT209218.</a></li>
+            </li>
           </ul>
-          <hr/>
+          <!-- <form class="d-flex" role="search">
+                              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                              <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form> -->
         </div>
-        <div>
-          <div class="row">
-            
-              <div class="col">
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                  <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Shop and Learn</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                      <!-- <span class="navbar-toggler-icon"></span> -->
-                      <span class="bi bi-plus"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Store</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Mac</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">iPad</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">iPhone</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Watch</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">AirPods</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">TV &amp; Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">AirTag</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Accessories</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Gift Cards</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </nav>
+      </div>
+    </nav>
+  </section>
 
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                  <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Apple Wallet</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                      <!-- <span class="navbar-toggler-icon"></span> -->
-                      <span class="bi bi-plus"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Wallet</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Apple Card</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Apple Pay</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Apple Cash</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </nav>
-              </div>
-
-              <div class="col">
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                  <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Account
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                      <!-- <span class="navbar-toggler-icon"></span> -->
-                      <span class="bi bi-plus"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Manage Your Apple ID</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Apple Store Account</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">iCloud.com</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </nav>
-
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                  <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Entertainment</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                      <!-- <span class="navbar-toggler-icon"></span> -->
-                      <span class="bi bi-plus"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Apple One</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Apple TV+</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Apple Music</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Apple Arcade</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Apple Fitness+</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Apple News+</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Apple Podcasts</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Apple Books</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">App Store</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </nav>
-              </div>
-
-              <div class="col">
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                  <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Apple Store
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                      <!-- <span class="navbar-toggler-icon"></span> -->
-                      <span class="bi bi-plus"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Find a Store</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Genius Bar</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Today at Apple</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Apple Camp</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Apple Store App</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Refurbished and Clearance</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Financing</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Apple Trade In</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Order Status</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Shopping Help</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </nav>
-              </div>
-              
-              <div class="col">
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                  <div class="container-fluid">
-                    <a class="navbar-brand" href="#">For Business
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                      <!-- <span class="navbar-toggler-icon"></span> -->
-                      <span class="bi bi-plus"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Apple and Business</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Shop for Business</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">iCloud.com</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </nav>
-
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                  <div class="container-fluid">
-                    <a class="navbar-brand" href="#">For Education
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                      <!-- <span class="navbar-toggler-icon"></span> -->
-                      <span class="bi bi-plus"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Apple and Education</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Shop for K-12</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Shop for College</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </nav>
-
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                  <div class="container-fluid">
-                    <a class="navbar-brand" href="#">For Healthcare
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                      <!-- <span class="navbar-toggler-icon"></span> -->
-                      <span class="bi bi-plus"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Apple in Healthcare</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Health on Apple Watch
-                        </a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Health Records on iPhone</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </nav>
-
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                  <div class="container-fluid">
-                    <a class="navbar-brand" href="#">For Government
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                      <!-- <span class="navbar-toggler-icon"></span> -->
-                      <span class="bi bi-plus"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Shop for Government</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Shop for Veterans and Military
-                        </a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </nav>
-              </div>
-
-              <div class="col">
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                  <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Apple Values
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                      <!-- <span class="navbar-toggler-icon"></span> -->
-                      <span class="bi bi-plus"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Accessibility</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Education</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Environment</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Inclusion and Diversity</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Privacy</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Racial Equity and Justice</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Supplier Responsibility</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </nav>
-
-                
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                  <div class="container-fluid">
-                    <a class="navbar-brand" href="#">About Apple
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                      <!-- <span class="navbar-toggler-icon"></span> -->
-                      <span class="bi bi-plus"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Newsroom</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Apple Leadership</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Career Opportunities</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Investors</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Ethics & Compliance</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contact Apple</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </nav>
-              </div>
-            
+  <section class="store">
+    <div class="container">
+      <div class="header">
+        <div class="text">
+          <h1><span style="color: black !important;">
+              Store.</span> The best way to buy the<br />products you love.</span></h1>
+        </div>
+        <div class="text_right">
+          <div class="chat_1">
+            <div>
+              <img src="../img/store/store-chat.jpg" title="chat" alt="chat" />
+            </div>
+            <div class="text">
+              <p>Need shopping help?</p>
+              <a href="#">Ask a Specialist</a>
+            </div>
           </div>
-          <div class="shop">
-            <p>More ways to shop: <a href="#">Find an Apple Store</a> or <a href="#"> other retailer </a>near you. Or call 1-800-MY-APPLE.</p>
-            <hr/>
-          </div>
-          <div>
-            <p>Copyright &copy; 2023 Apple Inc. All rights reserved.Privacy Policy <span> | </span> Terms of Use <span> | </span>Sales and Refunds <span> | </span> Legal<span> | </span>  Site Map</p>
+          <div class="chat_1" style="padding-top: 15px;">
+            <div class="chat_icon">
+              <i class="bi bi-chat-square"></i>
+              <i class="bi bi-apple"></i>
+            </div>
+            <div class="text">
+              <p>Visit an Apple Store</p>
+              <a href="#">Find one near you</a><span style="color:blue; font-size: 12px;"><i
+                  class="bi bi-chevron-right"></i></span>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-    <script src="../js/script.js"></script>
-  </body>
+    </div>
+    <div class="container-fluid" style="position: relative;
+          height: 100%;">
+      <div id="resize1" class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden resize">
+        <div class="swiper-wrapper" id="swiper-wrapper-854c02f85836fe9e" aria-live="polite">
+          <div class="swiper-slide swiper-slide-active store_main" role="group" aria-label="1 / 11" style="margin-right: 50px;">
+          </div>
+          <div class="swiper-slide store_main" role="group" aria-label="2 / 11" style="margin-right: 50px;">
+          </div>
+          <div class="swiper-slide swiper-slide-active" role="group" aria-label="3 / 11" style="margin-right: 50px;">
+            <img src="../img/store/slider/store-card-.png" alt="system" title="system" />
+            <p><a href="#">Mac</a></p>
+          </div>
+          <div class="swiper-slide swiper-slide-next" role="group" aria-label="4 / 11" style="margin-right: 50px;"><img
+              src="../img/store/slider/store-card-13-iphone-nav-202209_GEO_US.png" alt="iPhone" title="iPhone" />
+            <p><a href="#">iPhone</a></p>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="5 / 11" style="margin-right: 50px;"><img
+              src="../img/store/slider/store-card-13-ipad-nav-202210.png" alt="iPad" title="iPad" />
+            <p><a href="#">iPad</a></p>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="6 / 11" style="margin-right: 50px;"><img
+              src="../img/store/slider/store-card-13-watch-nav-202209.png" alt="watch" title="watch" />
+            <p><a href="#">Apple Watch</a></p>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="7 / 11" style="margin-right: 50px;"><img
+              src="../img/store/slider/store-card-13-airpods-nav-202209.png" alt="AirPods" title="AirPods" />
+            <p><a href="#">AirPods</a></p>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="8 / 11" style="margin-right: 50px;"><img
+              src="../img/store/slider/store-card-13-airtags-nav-202108.png" alt="AirTag" title="AirTag" />
+            <p><a href="#">AirTag</a></p>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="9 / 11" style="margin-right: 50px;"><img
+              src="../img/store/slider/store-card-13-appletv-nav-202210.png" alt="appleTV" title="appleTV" />
+            <p><a href="#">Apple TV 4K</a></p>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="10 / 11" style="margin-right: 50px;"><img
+              src="../img/store/slider/store-card-13-homepod-nav-202301.png" alt="homepod" title="homepod" />
+            <p><a href="#">Homepod</a></p>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="11 / 11" style="margin-right: 50px;"><img
+              src="../img/store/slider/store-card-13-accessories-nav-202209.png" alt="Accessories"
+              title="Accessories" />
+            <p><a href="#">Accessories</a></p>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="12 / 11" style="margin-right: 50px;"><img
+              src="../img/store/slider/store-card-13-holiday-giftcards-asit-agc-nav-202111.png" alt="gift"
+              title="gift" />
+            <p><a href="#">Apple Gift Cards</a></p>
+          </div>
+        </div>
+        <div class="swiper-button-next2" tabindex="0" role="button" aria-label="Next slide"
+          aria-controls="swiper-wrapper-854c02f85836fe9e" aria-disabled="false"></div>
+        <div class="swiper-button-prev2 swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide"
+          aria-controls="swiper-wrapper-854c02f85836fe9e" aria-disabled="true"></div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="resize2 store_item_1">
+    <div class="container" style="position: relative;
+          height: 100%;">
+      <div class="header">
+        <h3><span style="color: black">The latest.</span> Take a look at what’s new, right now.</h3>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div id="resize2" class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden resize">
+        <div class="swiper-wrapper" id="swiper-wrapper-854c02f85836fe9e" aria-live="polite">
+          <div class="swiper-slide swiper-slide-active latest_main" style="margin-right: 50px;"
+            role="group" aria-label="1 / 10">
+            <div style="visibility: hidden;">
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide-active" role="group" aria-label="2 / 10" style="margin-right: 50px;">
+            <div class="product_item" style="background: url('../img/store/item_1/store-card-40-watch.jpg');">
+
+              <div class="Pro_item_text">
+                <a href="#">
+                  <p>BLACK UNITY BAND</p>
+                  <h2>Creativity and community. Woven together.</h2>
+                  <p class="pro_item_price">$49</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="3 / 10" style="margin-right: 50px;">
+            <div class="product_item" style="background: url('../img/store/item_1/store-card-40-iphone-14.jpg');">
+              <div class="Pro_item_text">
+                <a href="#">
+                  <p class="color_grey">IPHONE 14</p>
+                  <h2 class="black">Big and bigger.</h2>
+                  <p class="pro_item_price text">From $799.00 or $33.29/mo. 24 mo.<br />
+                    before trade‑in*</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="4 / 10" style="margin-right: 50px;">
+            <div class="product_item" style="background: url('../img/store/item_1/store-card-40-macbook-pro.jpg');">
+              <div class="Pro_item_text">
+                <a href="#">
+                  <p>MACBOOK PRO 14&ldquo; AND 16 &rdquo;</p>
+                  <h2>Mover. Maker. Boundary <br />breaker.</h2>
+                  <p class="pro_item_price">From $1999 or $166.58/mo. for 12 mo.†</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="5 / 10" style="margin-right: 50px;">
+            <div class="product_item" style="background: url('../img/store/item_1/store-card-40-mac-mini.jpg');">
+              <div class="Pro_item_text">
+                <a href="#">
+                  <p>MAC MINI</p>
+                  <h2>More muscle. More hustle.</h2>
+                  <p class="pro_item_price"> From $599 or $49.91/mo. for 12 mo. Footnote†</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="6 / 10" style="margin-right: 50px;">
+            <div class="product_item" style="background: url('../img/store/item_1/store-card-40-homepod.jpg');">
+              <div class="Pro_item_text">
+                <a href="#">
+                  <p>HOMEPOD</p>
+                  <h2>Profound sound.</h2>
+                  <p class="pro_item_price">From $299</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="7 / 10" style="margin-right: 50px;">
+            <div class="product_item" style="background: url('../img/store/item_1/store-card-40-iphone-14-pro.jpg');">
+              <div class="Pro_item_text">
+                <a href="#">
+                  <p>IPHONE 14 PRO</p>
+                  <h2>Pro. Beyond.</h2>
+                  <br class="pro_item_price">From $999.00 or $41.62/mo. for 24 mo.<br />before trade‑in*</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="8 / 10" style="margin-right: 50px;">
+            <div class="product_item" style="background: url('../img/store/item_1/store-card-40-ipad.jpg');">
+              <div class="Pro_item_text">
+                <a href="#">
+                  <p class="color_grey">IPAD</p>
+                  <h2 class="black">Lovable. Drawable. Magical.</h2>
+                  <p class="pro_item_price text">From $449 or $37.41/mo. for 12 mo. Footnote†</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="9 / 10" style="margin-right: 50px;">
+            <div class="product_item" style="background: url('../img/store/item_1/store-card-40-watch-s8.jpg');">
+              <div class="Pro_item_text">
+                <a href="#">
+                  <p>APPLE WATCH SERIES 8</p>
+                  <h2>A healthy leap ahead.</h2>
+                  <p class="pro_item_price">From $399 or $16.62/mo. for 24 mo. Footnote†</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="10 / 10" style="margin-right: 50px;">
+            <div class="product_item" style="background: url('../img/store/item_1/store-card-40-ipad-pro.jpg');">
+              <div class="Pro_item_text">
+                <a href="#">
+                  <p>IPAD PRO</p>
+                  <h2>Supercharged by M2.</h2>
+                  <p class="pro_item_price">From $799 or $66.58/mo. for 12 mo. Footnote†</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="11 / 10" style="margin-right: 50px;">
+            <div class="product_item" style="background: url('../img/store/item_1/store-card-40-watch-ultra.jpg');">
+              <div class="Pro_item_text">
+                <a href="#">
+                  <p class="color_grey">APPLE WATCH ULTRA</p>
+                  <h2 class="black">Adventure awaits.</h2>
+                  <p class="pro_item_price text">From $799 or $33.29/mo. for 24 mo. Footnote†</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next2" tabindex="0" role="button" aria-label="Next slide"
+          aria-controls="swiper-wrapper-854c02f85836fe9e" aria-disabled="false"></div>
+        <div class="swiper-button-prev2 swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide"
+          aria-controls="swiper-wrapper-854c02f85836fe9e" aria-disabled="true"></div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="resize2 store_item_1">
+    <div class="container" style="position: relative;
+          height: 100%;">
+      <div class="header">
+        <h3><span style="color: black">Accessories</span> Put the finishing touch on their favorite gift for Valentine’s
+          Day.</h3>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div id="resize3" class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden resize">
+        <div class="swiper-wrapper" id="swiper-wrapper-854c02f85836fe9e" aria-live="polite">
+          <div class="swiper-slide swiper-slide-active access_main" style="margin-right: 50px; width: 312.8px !important;"
+            role="group" aria-label="1 / 10">
+            <div style="visibility: hidden;">
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide-active access_main_slide" role="group" aria-label="2 / 10" style="margin-right: 50px;">
+            <div class="product_item" style="background: url('../img/store/access/store-card-40-valentines-day.jpg');">
+              <div class="Pro_item_text main_slide">
+                <a href="#">
+                  <p class="color_grey">VALENTINE'S DAY</p>
+                  <h2 style="color: #ff0000
+                          ">Play matchmaker for the perfect pairing.</h2>
+                  <p class="pro_item_price black">Shop accessories.</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="3 / 10" style="margin-right: 50px;">
+            <div class="product_item"
+              style="background: url('../img/store/access/MME73.jpg');      background-repeat: no-repeat;background-position: center;">
+              <div class="Pro_item_text">
+                <a href="#">
+                  <p class="badget">Free Engraving</p>
+                  <p class="access_text">AirPods (3rd generation) with MagSafe Charging Case</p>
+                  <p class="access_item_price">$179.00</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="4 / 10" style="margin-right: 50px;">
+            <div class="product_item"
+              style="background: url('../img/store/access/MPU6.jpg');background-repeat: no-repeat;background-position: center;">
+              <div class="Pro_item_text">
+                <a href="#">
+                  <p class="badget">New</p>
+                  <p class="access_text">iPhone 14 Pro Clear Case with MagSafe</p>
+                  <p class="access_item_price">$49.00</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="5 / 10" style="margin-right: 50px;">
+            <div class="product_item" style="background: url('../img/store/access/MPRY3.jpg');      background-repeat: no-repeat; background-position: center;">
+              <div class="Pro_item_text">
+                <a href="#">
+                  <p class="badget">New</p>
+                  <p class="access_text">iPhone 14 Silicone Case with MagSafe - Lilac</p>
+                  <p class="access_item_price">$49.00</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="6 / 10" style="margin-right: 50px;">
+            <div class="product_item" style="background: url('../img/store/access/MQDT3.jpg');  background-repeat: no-repeat;
+        background-position: center;">
+              <div class="Pro_item_text">
+                <a href="#">
+                  <p class="badget">New</p>
+                  <p class="access_text">Smart Folio for iPad (10th generation) - Watermelon</p>
+                  <p class="access_item_price">$79.00</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="7 / 10" style="margin-right: 50px;">
+            <div class="product_item" style="background: url('../img/store/access/airtag-4pack-select-202104.jpg'); background-repeat: no-repeat;
+        background-position: center;">
+              <div class="Pro_item_text">
+                <a href="#">
+                  <p class="badget">Free Engraving</p>
+                  <p class="access_text">AirTag 4 pack</p>
+                  <p class="access_item_price">$99.00</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="8 / 10" style="margin-right: 50px;">
+            <div class="product_item" style="background: url('../img/store/access/MQTJ3.jpg'); background-repeat: no-repeat;
+        background-position: center;">
+              <div class="Pro_item_text">
+                <a href="#">
+                  <p class="badget">New</p>
+                  <p class="access_text">45mm Black Unity Sport Loop</p>
+                  <p class="access_item_price">$49.00</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next2" tabindex="0" role="button" aria-label="Next slide"
+          aria-controls="swiper-wrapper-854c02f85836fe9e" aria-disabled="false"></div>
+        <div class="swiper-button-prev2 swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide"
+          aria-controls="swiper-wrapper-854c02f85836fe9e" aria-disabled="true"></div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="help">
+    <div class="container">
+      <div class="header">
+        <div class="row">
+          <h3><span style="color: black">Help is here.</span> Whenever and however you need it.</h3>
+        </div>
+      </div>
+      <div class="row content">
+        <div class="col-6">
+          <div class="specialist">
+            <div class="text">
+              <a href="#">
+                <p>APPLE SPECIALIST</p>
+                <h3>Shop one on one with a Specialist. Online or in a store.</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div>
+            <div class="session">
+              <div class="text">
+                <a href="#">
+                  <!-- <p>APPLE SPECIALIST</p> -->
+                  <h3>Get to know your new device with a free Personal Session.</h3>
+                </a>
+              </div>
+            </div>
+            <div class="expert">
+              <div class="text">
+                <a href="#">
+                  <!-- <p>APPLE SPECIALIST</p> -->
+                  <h3>Get expert service and support at the Genius Bar.</h3>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reason">
+    <div class="container">
+      <div class="header">
+        <div class="row">
+          <h3><span style="color: black">The Apple Store difference.</span> Even more reasons to shop with us.</h3>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div id="resize4" class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden resize">
+        <div class="swiper-wrapper" id="swiper-wrapper-854c02f85836fe9e" aria-live="polite">
+          <div class="swiper-slide swiper-slide-active main_reason" style="margin-right: 50px; width: 312.8px !important;"
+            role="group" aria-label="1 / 10">
+            <div style="visibility: hidden !important;">
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide-active" role="group" aria-label="2 / 10" style="margin-right: 50px;">
+            <div class="reason_item">
+              <i class="bi bi-truck color_green"></i>
+              <div class="reason_text">
+                <a href="#">
+                  <h4>Enjoy <span class="color_green">two-hour delivery</span> from an Apple Store, <span class="color_green">free delivery</span>, or <span class="color_green"> easy pickup.<sup>2</sup></span></h4>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="3 / 10" style="margin-right: 50px;">
+            <div class="reason_item">
+              <i class="bi bi-laptop color_purple"></i>
+              <div class="reason_text">
+                <a href="#">
+                  <h4><span class="color_purple">Trade in your current device.</span> Get credit toward a new one.<sup>3</sup>
+                  </h4>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="3 / 10" style="margin-right: 50px;">
+            <div class="reason_item">
+              <i class="bi bi-credit-card color_green"></i>
+              <div class="reason_text">
+                <a href="#">
+                  <h4>Pay in full or <span class="color_green">pa over time.</span> Your choice.</h4>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="4 / 10" style="margin-right: 50px;">
+            <div class="reason_item">
+              <i class="bi bi-heart color_red"></i>
+              <div class="reason_text">
+                <a href="#">
+                  <h4><span class="color_red">Add a love note.</span>
+                    Engrave a mix of emoji, names, and numbers for free.</h4>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next2" tabindex="0" role="button" aria-label="Next slide"
+          aria-controls="swiper-wrapper-854c02f85836fe9e" aria-disabled="false"></div>
+        <div class="swiper-button-prev2 swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide"
+          aria-controls="swiper-wrapper-854c02f85836fe9e" aria-disabled="true"></div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+      </div>
+    </div>
+  </section>
+ 
+  <section class="resize2 store_item_1">
+    <div class="container" style="position: relative;
+          height: 100%;">
+      <div class="header">
+        <h3><span style="color: black">Loud and clear.</span> Unparalleled choices for rich, high-quality sound.</h3>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div id="resize5" class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden resize">
+        <div class="swiper-wrapper" id="swiper-wrapper-854c02f85836fe9e" aria-live="polite">
+          <div class="swiper-slide swiper-slide-active loud_main" style="margin-right: 50px; width: 312.8px !important;"
+            role="group" aria-label="1 / 10">
+            <div style="visibility: hidden;">
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide-active access_main_slide" role="group" aria-label="2 / 10" style="margin-right: 50px;">
+            <div class="product_item" style="background: url('../img/store/loud/store-card-40-applemusic-202301.jpeg');">
+              <div class="Pro_item_text main_slide">
+                <a href="#">
+                  <h2 class="black">Get 6 months of Apple Music free.</h2>
+                  <p class="access_text">Included with your HomePod, AirPods, or select Beats product.⁺</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="3 / 10" style="margin-right: 50px;">
+            <div class="product_item"
+              style="background: url('../img/store/loud/homepod-select-midnight-202210.jpeg');      background-repeat: no-repeat;background-position: center;">
+              <div class="Pro_item_text">
+                <a href="#">
+                  <p class="badget">NEW</p>
+                  <p class="access_text">HomePod - Midnight</p>
+                  <p class="access_item_price">$299.00</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="4 / 10" style="margin-right: 50px;">
+            <div class="product_item"
+              style="background: url('../img/store/loud/homepod-mini-select-yellow-202110.jpeg');background-repeat: no-repeat;background-position: center;">
+              <div class="Pro_item_text">
+                <a href="#">
+                  <p class="badget">New</p>
+                  <p class="access_text">AirPods Pro (2nd generation)</p>
+                  <p class="access_item_price">$249.00</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="5 / 10" style="margin-right: 50px;">
+            <div class="product_item" style="background: url('../img/store/loud/MME73.jpeg');      background-repeat: no-repeat; background-position: center;">
+              <div class="Pro_item_text">
+                <a href="#">
+                  <p class="access_text">HomePod mini - Yellow</p>
+                  <p class="access_item_price">$99.00</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="6 / 10" style="margin-right: 50px;">
+            <div class="product_item" style="background: url('../img/store/loud/MJ4X3.jpeg');  background-repeat: no-repeat;
+        background-position: center;">
+              <div class="Pro_item_text">
+                <a href="#">
+                  <p class="badget">Free Engraving</p>
+                  <p class="access_text">AirPods (3rd generation) with Lightning Charging Case</p>
+                  <p class="access_item_price">$79.00</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="7 / 10" style="margin-right: 50px;">
+            <div class="product_item" style="background: url('../img/store/loud/airpods-max-select-silver-202011.jpeg'); background-repeat: no-repeat;
+        background-position: center;">
+              <div class="Pro_item_text">
+                <a href="#">
+                  <p class="badget">Free Engraving</p>
+                  <p class="access_text">Beats Studio Buds – True Wireless Noise Cancelling Earphones – Black</p>
+                  <p class="access_item_price">$149.99</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next2" tabindex="0" role="button" aria-label="Next slide"
+          aria-controls="swiper-wrapper-854c02f85836fe9e" aria-disabled="false"></div>
+        <div class="swiper-button-prev2 swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide"
+          aria-controls="swiper-wrapper-854c02f85836fe9e" aria-disabled="true"></div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+      </div>
+    </div>
+    </div>
+  </section> 
+
+  <section class="resize2 store_item_1">
+    <div class="container" style="position: relative;
+          height: 100%;">
+      <div class="header">
+        <h3><span style="color: black">The Apple experience.</span>  Do even more with Apple products and services.</h3>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div id="resize6" class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden resize">
+        <div class="swiper-wrapper" id="swiper-wrapper-854c02f85836fe9e" aria-live="polite">
+          <div class="swiper-slide swiper-slide-active loud_main" style="margin-right: 50px; width: 312.8px !important;"
+            role="group" aria-label="1 / 10">
+            <div style="visibility: hidden;">
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide-active access_main_slide" role="group" aria-label="2 / 10" style="margin-right: 50px;">
+            <div class="product_item" style="background: url('../img/store/exp/store-card-50-subscriptions-202108_GEO_US.jpeg');">
+              <div class="Pro_item_text main_slide">
+                <a href="#">
+                  <h2 class="black">Six Apple services. One easy subscription.</h2>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="3 / 10" style="margin-right: 50px;">
+            <div class="product_item"
+              style="background: url('../img/store/exp/store-card-40-applecare-202301.jpeg');      background-repeat: no-repeat;background-position: center;">
+              <div class="Pro_item_text main_slide">
+                <a href="#">
+                  <h2 class="black">We've got you covered.</h2>
+                  <p class="access_text">AppleCare+ now comes with unlimited repairs for accidental damage protection.</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="4 / 10" style="margin-right: 50px;">
+            <div class="product_item"
+              style="background: url('../img/store/exp/store-card-50-applepay-202209.jpeg');background-repeat: no-repeat;background-position: center;">
+              <div class="Pro_item_text main_slide">
+                <a href="#">
+                  <h2 class="black">Discover all the ways to use Apple Pay.</h2>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="5 / 10" style="margin-right: 50px;">
+            <div class="product_item" style="background: url('../img/store/exp/store-card-50-homekit-202301.jpeg');      background-repeat: no-repeat; background-position: center;">
+              <div class="Pro_item_text main_slide">
+                <a href="#">
+                  <p class="color_grey" style="font-size: small; margin-bottom: -15px;">HOME</p>
+                  ><h2 class="black">See how one app can control your entire home.</h2>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next2" tabindex="0" role="button" aria-label="Next slide"
+          aria-controls="swiper-wrapper-854c02f85836fe9e" aria-disabled="false"></div>
+        <div class="swiper-button-prev2 swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide"
+          aria-controls="swiper-wrapper-854c02f85836fe9e" aria-disabled="true"></div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <section class="resize2 store_item_1">
+    <div class="container" style="position: relative;
+          height: 100%;">
+      <div class="header">
+        <h3><span style="color: black">Special stores.</span> Exclusive savings for businesses, school, and more.</h3>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div id="resize7" class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden resize">
+        <div class="swiper-wrapper" id="swiper-wrapper-854c02f85836fe9e" aria-live="polite">
+          <div class="swiper-slide swiper-slide-active latest_main" style="margin-right: 50px;"
+            role="group" aria-label="1 / 10">
+            <div style="visibility: hidden;">
+            </div>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="2 / 10" style="margin-right: 50px;">
+            <div class="product_item" style="background: url('../img/store/education/store-card-40-edu-202301.jpeg'); background-repeat: no-repeat; background-position: center;background-size: cover;">
+              <div class="Pro_item_text main_slide">
+                <a href="#">
+                  <p class="color_grey" style="font-size: small; margin-bottom: -15px;">EDUCATION</p>
+                  <h2 class="black">Save on Mac or iPad with education pricing.<sup>1</sup></h2>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="3 / 10" style="margin-right: 50px;">
+            <div class="product_item" style="background: url('../img/store/education/store-card-40-business-202209.jpg'); background-repeat: no-repeat;background-position: center;">
+              <div class="Pro_item_text main_slide">
+                <a href="#">
+                  <p class="color_grey" style="font-size: small; margin-bottom: -15px;">BUSINESS</p>
+                  <h2>From enterprise to small business, we’ll work with you.<sup>1</sup></h2>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="4 / 10" style="margin-right: 50px;">
+            <div class="product_item" style="background: url('../img/store/education/store-card-40-gov-202301.jpeg'); background-repeat: no-repeat;background-position: center;">
+              <div class="Pro_item_text main_slide">
+                <a href="#">
+                  <p class="color_grey" style="font-size: small; margin-bottom: -15px;">GOVERNMENT</p>
+                  <h2>Special pricing is available for state, local, and federal agencies.<sup>1</sup></h2>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="5 / 10" style="margin-right: 50px;">
+            <div class="product_item" style="background: url('../img/store/education/ipad-card-40-veteran-202210.jpeg'); background-repeat: no-repeat;background-position: center;">
+              <div class="Pro_item_text main_slide">
+                <a href="#">
+                  <p class="color_grey" style="font-size: small; margin-bottom: -15px;">VETERANS AND MILITARY</p>
+                  <h2 class="black">Active and veteran members may be eligible for exclusive savings.<sup>1</sup></h2>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" role="group" aria-label="5 / 10" style="margin-right: 50px;">
+            <div class="product_item" style="background: url('../img/store/education/store-card-40-refurb-202108.jpeg'); background-repeat: no-repeat;background-position: center;">
+              <div class="Pro_item_text main_slide">
+                <a href="#">
+                  <p class="color_grey" style="font-size: small; margin-bottom: -15px;">CERTIFIED REFURBISHED</p>
+                  <h2 class="black">Shop refurbished Apple products backed by a one‑year warranty.<sup>1</sup></h2>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next2" tabindex="0" role="button" aria-label="Next slide"
+          aria-controls="swiper-wrapper-854c02f85836fe9e" aria-disabled="false"></div>
+        <div class="swiper-button-prev2 swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide"
+          aria-controls="swiper-wrapper-854c02f85836fe9e" aria-disabled="true"></div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <section class="footer">
+    <div class="container">
+      <div>
+        <div class="row footer_btn">
+          <h3>Quick Links</h3>
+          <a href="#">Order Status</a>
+          <a href="#">Shopping Help </a>
+          <a href="#">Returns</a>
+          <a href="#">Your Saves</a>
+        </div>
+        <ol class="list_1">
+          <li>New subscribers only. $6.99/month after free trial. Plan automatically renews until cancelled.
+            <a>Terms</a> apply.</li>
+          <li>Apple Fitness+ requires iPhone 8 or later, or Apple Watch Series 3 or later paired with iPhone 6s or
+            later. New subscribers only. $9.99/month after trial. Plan automatically renews until cancelled.
+            <a>Terms</a> apply.</li>
+        </ol>
+        <ul class="list_2">
+          <li>A subscription is required for Apple Fitness+.</li>
+          <li>Apple Fitness+ requires an iPhone 8 or later with iOS 16.1.</li>
+          <li>Apple Fitness+ requires an Apple Watch Series 3 or later. Available when paired with iPhone 6s or later
+            with iOS 14.3 or later.</li>
+          <li>Fitness app on Apple TV requires tvOS 14.3 or later.</li>
+          <li>Fitness app on iPad requires iPadOS 14.3 or later.</li>
+          <li>To get the newest features, make sure your devices are running the latest software version.</li>
+          <li>o access and use all the features of Apple Card, you must add Apple Card to Wallet on an iPhone or iPad
+            with the latest version of iOS or iPadOS. Update to the latest version by going to Settings<span>&gt;</span>
+            General <span>&gt;</span> Software Update. Tap Download and Install.</li>
+          <li>Available for qualifying applicants in the United States.</li>
+          <li>Apple Card is issued by Goldman Sachs Bank USA, Salt Lake City Branch.</li>
+          <li>Learn more about how Apple Card applications are evaluated at <a>support.apple.com/kb/HT209218.</a></li>
+        </ul>
+        <hr />
+      </div>
+      <div>
+        <div class="row">
+
+          <div class="col">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">Shop and Learn</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <!-- <span class="navbar-toggler-icon"></span> -->
+                  <span class="bi bi-plus"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Store</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Mac</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">iPad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">iPhone</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Watch</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">AirPods</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">TV &amp; Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">AirTag</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Accessories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Gift Cards</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">Apple Wallet</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <!-- <span class="navbar-toggler-icon"></span> -->
+                  <span class="bi bi-plus"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Wallet</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Apple Card</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Apple Pay</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Apple Cash</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+
+          <div class="col">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">Account
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <!-- <span class="navbar-toggler-icon"></span> -->
+                  <span class="bi bi-plus"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Manage Your Apple
+                        ID</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Apple Store Account</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">iCloud.com</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">Entertainment</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <!-- <span class="navbar-toggler-icon"></span> -->
+                  <span class="bi bi-plus"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Apple One</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Apple TV+</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Apple Music</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Apple Arcade</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Apple Fitness+</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Apple News+</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Apple Podcasts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Apple Books</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">App Store</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+
+          <div class="col">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">Apple Store
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <!-- <span class="navbar-toggler-icon"></span> -->
+                  <span class="bi bi-plus"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Find a Store</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Genius Bar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Today at Apple</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Apple Camp</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Apple Store App</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Refurbished and Clearance</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Financing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Apple Trade In</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Order Status</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Shopping Help</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+
+          <div class="col">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">For Business
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <!-- <span class="navbar-toggler-icon"></span> -->
+                  <span class="bi bi-plus"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Apple and Business</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Shop for Business</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">iCloud.com</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">For Education
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <!-- <span class="navbar-toggler-icon"></span> -->
+                  <span class="bi bi-plus"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Apple and Education</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Shop for K-12</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Shop for College</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">For Healthcare
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <!-- <span class="navbar-toggler-icon"></span> -->
+                  <span class="bi bi-plus"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Apple in Healthcare</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Health on Apple Watch
+                      </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Health Records on iPhone</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">For Government
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <!-- <span class="navbar-toggler-icon"></span> -->
+                  <span class="bi bi-plus"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Shop for Government</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Shop for Veterans and Military
+                      </a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+
+          <div class="col">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">Apple Values
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <!-- <span class="navbar-toggler-icon"></span> -->
+                  <span class="bi bi-plus"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Accessibility</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Environment</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Inclusion and Diversity</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Privacy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Racial Equity and Justice</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Supplier Responsibility</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+
+
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">About Apple
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <!-- <span class="navbar-toggler-icon"></span> -->
+                  <span class="bi bi-plus"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Newsroom</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Apple Leadership</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Career Opportunities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Investors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Ethics & Compliance</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact Apple</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+
+        </div>
+        <div class="shop">
+          <p>More ways to shop: <a href="#">Find an Apple Store</a> or <a href="#"> other retailer </a>near you. Or call
+            1-800-MY-APPLE.</p>
+          <hr />
+        </div>
+        <div>
+          <p>Copyright &copy; 2023 Apple Inc. All rights reserved.Privacy Policy <span> | </span> Terms of Use <span> |
+            </span>Sales and Refunds <span> | </span> Legal<span> | </span> Site Map</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+
+  <!-- Swiper JS -->
+  <script src="../assests/resize-slider-demo_files/swiper-bundle.min.js.download"></script>
+  <script src="../js/script.js"></script>
+</body>
+
 </html>
